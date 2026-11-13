@@ -206,8 +206,8 @@ void testMolecularGas(bool rigid) {
         system.addParticle(1.0);
         system.addParticle(1.0);
         Vec3 pos(initialLength*genrand_real2(sfmt), 0.5*initialLength*genrand_real2(sfmt), 2*initialLength*genrand_real2(sfmt));
-        bonds->addBond(positions.size(), positions.size()+1, 0.1, 1.0);
-        bonds->addBond(positions.size(), positions.size()+2, 0.1, 1.0);
+        bonds->addBond(positions.size(), positions.size()+1, 0.1, 1000.0);
+        bonds->addBond(positions.size(), positions.size()+2, 0.1, 1000.0);
         positions.push_back(pos);
         positions.push_back(pos+Vec3(0.1, 0.0, 0.0));
         positions.push_back(pos+Vec3(0.0, 0.1, 0.0));
